@@ -1,13 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petinfo - Login</title>
-</head>
-<body>
-    <main></main>
-    <script type="module" src="index.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/globalStyles.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../../styles/positioning.css" />
+    <link rel="stylesheet" href="../../styles/buttons.css" />
+    <link rel="stylesheet" href="../../styles/inputs&labels.css" />
+    <link rel="stylesheet" href="../../styles/margins.css" />
+    <link rel="stylesheet" href="../../styles/texts.css" />
+    <title>Login</title>
+  </head>
+  <body>
+    <main>
+      <section class="container-info">
+        <h1 class="titleLogin">Petinfo</h1>
+        <h2 class="title-h2Login">
+          <span>Amor</span> e <span>carinho</span> por meio do conhecimento
+        </h2>
+        <div>
+          <p>
+            Todas as informações para melhorar a vida do seu pet em um só lugar
+          </p>
+        </div>
+        <div class="container-galery">
+          <div class="div1">
+            <img
+              src="../../assets/Rectangle 2 (1).svg"
+              alt=""
+              class="galery-img"
+            />
+          </div>
+          <div class="div2">
+            <img
+              src="../../assets/Rectangle 3 (1).png"
+              alt=""
+              class="galery-img"
+            />
+          </div>
+          <div class="div3">
+            <img
+              src="../../assets/Rectangle 5 (1).svg"
+              alt=""
+              class="galery-img"
+            />
+          </div>
+          <div class="div4">
+            <img
+              src="../../assets/Rectangle 4 (1).svg"
+              alt=""
+              class="galery-img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="container-login">
+        <p class="registration">Login</p>
+        <form class="flex column">
+          <div class="flex column gap12 m-botton26 m-top26">
+            <label class="label-input" for="user">Usuário</label>
+            <input
+              class="input-form"
+              type="text"
+              name="user"
+              id="user"
+              placeholder="Digite seu usuário aqui"
+              required
+            />
+          </div>
+
+          <div class="flex column gap12 m-botton26">
+            <label class="label-input" for="password">Senha</label>
+            <input
+              class="input-form"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Digite sua senha aqui"
+              required
+            />
+            <small class="password-error display-none"
+              >A senha esta incorreta</small
+            >
+          </div>
+          <div>
+            <button class="button-blue width100 m-botton26">Acessar</button>
+            <p class="text-center m-botton20 login-question">
+              Ainda não possui conta?
+            </p>
+            <p class="text-center m-botton26 login-info">
+              Clicando no botão abaixo, você pode se cadastrar rapidamente
+            </p>
+
+            <a class="button-transparent m-top26" href="../cadastro/index.html"
+              >Cadastrar</a
+            >
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

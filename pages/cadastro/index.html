@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/globalStyles.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="../../styles/positioning.css" />
+    <link rel="stylesheet" href="../../styles/buttons.css" />
+    <link rel="stylesheet" href="../../styles/inputs&labels.css" />
+    <link rel="stylesheet" href="../../styles/margins.css" />
+    <link rel="stylesheet" href="../../styles/texts.css" />
+    <title>Petinfo - Login</title>
+  </head>
+  <body>
+    <main>
+      <section class="container-register">
+        <div class="flex width100 justify-between">
+          <p class="registration">Cadastro</p>
+          <a href="../login/index.html" class="button-transparentSmall"
+            >Voltar para o login</a
+          >
+        </div>
+        <form class="flex column">
+          <div class="flex column gap12 m-botton26 m-top26">
+            <label class="label-input" for="user">Usuário</label>
+            <input
+              class="input-form"
+              type="text"
+              name="user"
+              id="user"
+              placeholder="Digite seu usuário aqui"
+              required
+            />
+          </div>
+          <div class="flex column gap12 m-botton26">
+            <label class="label-input" for="email">Email</label>
+            <input
+              class="input-form"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Digite seu email aqui"
+              required
+            />
+          </div>
+          <div class="flex column gap12 m-botton26">
+            <label class="label-input" for="imgProfile"
+              >Link da foto do perfil</label
+            >
+            <input
+              class="input-form"
+              type="text"
+              name="imgProfile"
+              id="imgProfile"
+              placeholder="Insira o link aqui"
+            />
+          </div>
+          <div class="flex column gap12 m-botton26">
+            <label class="label-input" for="password">Senha</label>
+            <input
+              class="input-form"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Digite sua senha aqui"
+              required
+            />
+          </div>
+          <div>
+            <button class="button-blue width100">Cadastrar</button>
+            <a class="button-transparent m-top26" href="../login/index.html"
+              >Voltar para o Login</a
+            >
+          </div>
+        </form>
+      </section>
+      <section class="container-info">
+        <h1 class="title">Petinfo</h1>
+        <h2 class="title-h2">Ooooooba!</h2>
+        <p>
+          Agora vamos poder contribuir para o bem estar do seu pet por meio do
+          conhecimento
+        </p>
+        <div class="container-galery">
+          <div class="div1">
+            <img
+              src="../../assets/Rectangle 2.svg"
+              alt=""
+              class="galery-img h-2"
+            />
+          </div>
+          <div class="div2">
+            <img src="../../assets/Rectangle 3.svg" alt="" class="galery-img" />
+          </div>
+          <div class="div3">
+            <img src="../../assets/Rectangle 5.svg" alt="" class="galery-img" />
+          </div>
+          <div class="div4">
+            <img src="../../assets/Rectangle 4.svg" alt="" class="galery-img" />
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

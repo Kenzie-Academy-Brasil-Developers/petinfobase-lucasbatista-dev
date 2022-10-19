@@ -1,0 +1,68 @@
+.label-input {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray100);
+}
+.registration {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: #1e1e1e;
+}
+.title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 150%;
+  color: var(--gray100);
+  margin-bottom: 24px;
+}
+.titleLogin {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  color: var(--gray100);
+  margin-bottom: 24px;
+}
+.title-h2 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  color: var(--brand100);
+  margin-bottom: 24px;
+}
+.title-h2Login {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 150%;
+  color: var(--gray100);
+  margin-bottom: 24px;
+}
+.title-h2Login span {
+  color: var(--brand100);
+}
+.container-info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray300);
+  margin-bottom: 24px;
+}
+.password-error {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--alert100);
+}
+.login-question {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray100);
+}
+.login-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--gray300);
+}
