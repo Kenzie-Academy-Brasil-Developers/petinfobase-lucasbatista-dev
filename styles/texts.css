@@ -66,3 +66,41 @@
   line-height: 150%;
   color: var(--gray300);
 }
+.title-home {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+}
+.separator p {
+  width: 800px;
+  margin: 0 auto;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--gray10);
+}
+.h2-home {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  font-variant: (--gray100);
+  margin-bottom: 25px;
+}
+.post-home {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray300);
+  margin-bottom: 25px;
+}
+.post-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--brand100);
+  text-decoration: none;
+}
+.post-link:hover {
+  text-decoration-line: underline;
+  color: var(--brand200);
+}
