@@ -1,3 +1,5 @@
+import { toast } from "./toast.js";
+
 const baseUrl = "http://localhost:3333/";
 
 const smallPassword = document.querySelector("#error-password");
@@ -17,10 +19,11 @@ async function login(body) {
 
     if (request.ok) {
       const response = await request.json();
+      toast("Sucesso!", "Login feito com Sucesso");
       localStorage.setItem("user", JSON.stringify(response));
 
       setTimeout(() => {
-        window.location.href = "/pages/home/home.html";
+        // window.location.href = "/pages/home/home.html";
       }, 4000);
     } else {
       console.log("deu ruim");
