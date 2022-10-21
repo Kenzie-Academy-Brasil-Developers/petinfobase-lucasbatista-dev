@@ -23,7 +23,7 @@ async function login(body) {
       localStorage.setItem("user", JSON.stringify(response));
 
       setTimeout(() => {
-        // window.location.href = "/pages/home/home.html";
+        window.location.href = "/pages/home/home.html";
       }, 4000);
     } else {
       console.log("deu ruim");
