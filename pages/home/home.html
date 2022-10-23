@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../styles/margins.css" />
     <link rel="stylesheet" href="../../styles/positioning.css" />
     <link rel="stylesheet" href="../../styles/texts.css" />
+    <link rel="stylesheet" href="../../styles/modal.css" />
     <title>Home</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
         <h2 class="title-home">Petinfo</h2>
       </div>
       <div class="flex align-center gap12">
-        <button class="button-blue">Criar publicação</button>
+        <button id="btnPost" class="button-blue">Criar publicação</button>
         <div class="img-user">
           <img src="../../assets/Ellipse 1.svg" alt="" />
         </div>
@@ -30,35 +31,9 @@
         <p>Feed</p>
       </div>
       <section class="container-section">
-        <ul>
-          <li>
-            <div class="flex align-center justify-between m-botton35">
-              <div class="flex align-center gap12">
-                <div class="img-user">
-                  <img src="../../assets/Ellipse 1.svg" alt="" />
-                </div>
-                <p>Samuel Leão</p>
-                <div><img src="../../assets/_.svg" alt="" /></div>
-                <p>Outubro de 2022</p>
-              </div>
-              <div class="flex align-center gap12">
-                <button class="button-transparentSmall">Editar</button>
-                <button class="button-transparentSmall">Excluir</button>
-              </div>
-            </div>
-            <h2 class="h2-home">
-              Outubro Rosa: Detalhes sobre a importância da prevenção do câncer
-              de mama em cadelas e gatas
-            </h2>
-            <p class="post-home">
-              Assim como em humanos, cadelas e gatas também podem desenvolver
-              câncer de mama. Ainda hoje, para ambas as espécies, o câncer de
-              mama tem maior...
-            </p>
-            <a class="post-link" href="">Acessar publicação</a>
-          </li>
-        </ul>
+        <ul id="listPosts"></ul>
       </section>
     </main>
+    <script type="module" src="./home.js"></script>
   </body>
 </html>

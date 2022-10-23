@@ -16,7 +16,7 @@ const toast = (title, message) => {
   const messageToast = document.createElement("p");
   messageToast.classList = "toast-text";
 
-  if (title == "Sucesso!") {
+  if (title == "Sucesso!" || title == "Sua conta foi criada com sucesso!") {
     titleToast.classList = "toast-h3Sucess";
     divImg.classList = "box-checkSucess";
     imgCheck.src = "../../assets/check.svg";

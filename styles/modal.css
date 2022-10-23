@@ -1,0 +1,31 @@
+.modal-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.modal-container {
+  background-color: white;
+  width: 60%;
+  min-height: 65%;
+  position: relative;
+  border-radius: 10px;
+  border: solid 2px black;
+}
+
+.modal-close {
+  padding: 10px 15px;
+  font-size: 30px;
+  color: var(--grey-500);
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
