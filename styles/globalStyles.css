@@ -13,7 +13,9 @@
   /*  */
   --brand200: #3b56d9;
   /*  */
-  --gray100: #212529;
+  --gray100: box-shadow: 1px 1px 7px 1px rgba(33, 37, 41, 0.1);
+  -webkit-box-shadow: 1px 1px 7px 1px rgba(33, 37, 41, 0.1);
+  -moz-box-shadow: 1px 1px 7px 1px rgba(33, 37, 41, 0.1);;
   /*  */
   --gray200: #343a40;
   /*  */

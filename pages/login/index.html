@@ -59,7 +59,7 @@
       </section>
       <section class="container-login">
         <p class="registration">Login</p>
-        <form class="flex column">
+        <form id="form-login" class="flex column">
           <div class="flex column gap12 m-botton26 m-top26">
             <label class="label-input" for="user">Usuário</label>
             <input
@@ -87,7 +87,13 @@
             >
           </div>
           <div>
-            <button class="button-blue width100 m-botton26">Acessar</button>
+            <button
+              disabled
+              id="buttonLogin"
+              class="button-blue width100 m-botton26"
+            >
+              Acessar
+            </button>
             <p class="text-center m-botton20 login-question">
               Ainda não possui conta?
             </p>
@@ -95,7 +101,10 @@
               Clicando no botão abaixo, você pode se cadastrar rapidamente
             </p>
 
-            <a class="button-transparent m-top26" href="../cadastro/index.html"
+            <a
+              id="btnLogin"
+              class="button-transparent m-top26"
+              href="../cadastro/index.html"
               >Cadastrar</a
             >
           </div>

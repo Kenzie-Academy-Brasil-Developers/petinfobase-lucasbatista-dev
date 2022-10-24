@@ -37,3 +37,27 @@
   margin-top: 20px;
   display: flex;
 }
+
+ul li {
+  padding: 5px;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.034);
+  margin-top: 10px;
+  width: 800px;
+}
+.containerArticle {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+
+  padding: 32px 24px;
+  gap: 46px;
+}
+.containerArticle p {
+  width: 750px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--gray300);
+  margin-bottom: 25px;
+  word-break: break-all;
+}

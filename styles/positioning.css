@@ -19,6 +19,9 @@
 .justify-center {
   justify-content: center;
 }
+.justify-end {
+  justify-content: flex-end;
+}
 .text-center {
   text-align: center;
 }
@@ -33,6 +36,9 @@
 }
 .gap12 {
   gap: 12px;
+}
+.gap16 {
+  gap: 16px;
 }
 .display-none {
   display: none;

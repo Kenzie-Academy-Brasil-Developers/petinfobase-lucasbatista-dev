@@ -1,3 +1,4 @@
+//------------------------------> Modal PADRÃO
 const openModal = (children) => {
   const body = document.querySelector("body");
   const backgroundContainer = document.createElement("section");

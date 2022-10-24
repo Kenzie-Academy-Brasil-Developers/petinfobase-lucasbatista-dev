@@ -1,10 +1,19 @@
 import { getLocalStorage } from "../../scripts/localStorage.js";
 import { getPosts } from "../../scripts/api.js";
-import { createPostForm, updatePostForm } from "../../scripts/forms.js";
+import {
+  createPostForm,
+  updatePostForm,
+  deletePostForm,
+  openPost,
+} from "../../scripts/forms.js";
 import { openModal } from "../../scripts/modal.js";
 import { createPost } from "../../scripts/api.js";
 
+// ---------------------------------------->
+
 const baseUrl = "http://localhost:3333/";
+
+// ----------------------------------------> Verificando se usuario esta com o token no localStorage
 const verifyPermission = () => {
   const user = getLocalStorage();
 
@@ -17,7 +26,7 @@ verifyPermission();
 // console.log(await getPosts());
 
 console.log(getLocalStorage());
-
+// ---------------------------------------->
 async function renderImgProfile() {
   const user = getLocalStorage();
 
@@ -39,6 +48,7 @@ async function renderImgProfile() {
 }
 // renderImgProfile();
 
+// ----------------------------------------> Renderizando Posts na tela
 const renderPosts = async () => {
   const render = await getPosts();
 
@@ -67,16 +77,11 @@ const renderPosts = async () => {
     const informationPost = document.createElement("p");
     const linkPost = document.createElement("a");
 
-    tagLi.classList = "m-botton50";
+    tagLi.classList = "p-bottom40 containerLi ";
 
     divHeaderPost.classList = "flex align-center justify-between m-botton20";
     divUser.classList = "flex align-center gap12";
     divImgUser.classList = "img-user";
-    // imgUser.classList = "";
-    // nameUser.classList = "";
-    // divContention.classList = "";
-    // imgContention.classList = "";
-    // postDate.classList = "";
     divButtons.classList = "flex align-center gap12";
     editButton.classList = "button-transparentSmall";
     deleteButton.classList = "button-transparentSmall";
@@ -100,7 +105,15 @@ const renderPosts = async () => {
 
     deleteButton.innerText = "Deletar";
     linkPost.innerText = "Acessar publicação";
+    linkPost.addEventListener("click", () => {
+      const openPostModal = openPost(post);
+      openModal(openPostModal);
+    });
 
+    deleteButton.onclick = () => {
+      const deletePost = deletePostForm(post.id);
+      openModal(deletePost);
+    };
     tagLi.append(divHeaderPost, titlePost, informationPost, linkPost);
 
     divHeaderPost.append(divUser, divButtons);
@@ -119,6 +132,7 @@ const renderPosts = async () => {
 
 renderPosts();
 
+// ----------------------------------------> Abrindo Modal ao clicar em nova publicação
 const createNewPost = () => {
   const button = document.querySelector("#btnPost");
 
